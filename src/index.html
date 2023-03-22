@@ -14,14 +14,24 @@ Licenc: GNU GPL
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ships</title>
+    <link rel="shortcut icon" href="img/outline_directions_boat_white_24dp.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
     <div class="container">
         <h1>Hajók</h1>
         <table>
-            <!--
-                TODO: táblázat: Név | Méret (cm) | Ár | Személyek száma | Utánfutó
-            -->
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Méret (cm)</th>
+                    <th>Ár</th>
+                    <th>Személyek száma</th>
+                    <th>Utánfutó</th>
+                </tr>
+            </thead>
+            <tbody id="shipsTableBody"></tbody>
         </table>
     </div>
     <div class="quote">
@@ -34,5 +44,7 @@ Licenc: GNU GPL
             TODO: névjegy készítése
         -->
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
