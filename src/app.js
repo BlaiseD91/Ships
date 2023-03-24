@@ -44,7 +44,7 @@ function render(){
         rows += `
             <tr class="hoverable">
                 <td>${ship.name}</td>
-                <td>${ship.lenght}</td>
+                <td>${ship.length}</td>
                 <td>${ship.price}</td>
                 <td>${ship.person}</td>
                 <td>${ship.trailer}</td>
