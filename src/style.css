@@ -12,3 +12,38 @@
 /*
 TODO: styling
 */
+body{
+    background-color: #13376B;
+}
+.about{
+    font-weight: bold;
+    text-align: end;
+    color: #132446;
+    border-bottom: 3px #132446 solid;
+    background: linear-gradient(135deg, #0A688A 40%, #63C4BD 75%, #CBF2D4);
+}
+.container{
+    background: linear-gradient(150deg, #0A688A 40%, #63C4BD);
+    border: 5px #132446 solid;
+    border-radius: 20px;
+    color: #132446;
+}
+h1{
+    border-bottom: #132446 solid 2px;
+}
+img{
+    margin-left: 10px;
+}
+blockquote{
+    text-align: end;
+    font-size: large;
+    align-items: end;
+}
+tr{
+    border-bottom: 1px #132446 solid;
+    font-weight: bold;
+}
+.hoverable:hover{
+    color: #CBF2D4;
+    background-color: #132446;
+}
