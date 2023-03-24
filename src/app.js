@@ -44,10 +44,10 @@ function render(){
         rows += `
             <tr class="hoverable">
                 <td>${ship.name}</td>
-                <td>${ship.length}</td>
-                <td>${ship.price}</td>
-                <td>${ship.person}</td>
-                <td>${ship.trailer}</td>
+                <td class="center">${ship.length}</td>
+                <td class="center">${ship.price}</td>
+                <td class="center">${ship.person}</td>
+                <td class="end">${ship.trailer}</td>
             </tr>
         `;
     });
