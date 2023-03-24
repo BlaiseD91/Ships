@@ -3,7 +3,7 @@
 * Author: Székely Balázs Csaba
 * Copyright: 2023, Székely Balázs Csaba
 * Group: SZOFT I/1/E
-* Date: 2023-03-22
+* Date: 2023-03-24
 * Github: https://github.com/BlaiseD91
 * Licenc: GNU GPL
 */
@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
 });
 
 function init(){
-    doc.shipsTableBody = document.querySelector('.shipsTableBody');
+    doc.shipsTableBody = document.querySelector('#shipsTableBody');
 }
 
 function loadShips(){
@@ -34,8 +34,22 @@ function loadShips(){
     .then(result => {
         state.ships = result;
         console.log(result);
+        render();
     });
 }
 
-
-// TODO: A tömböt a weblapon egy táblázatba kell generálnia.
+function render(){
+    let rows = "";
+    state.ships.forEach(ship => {
+        rows += `
+            <tr class="hoverable">
+                <td>${ship.name}</td>
+                <td>${ship.lenght}</td>
+                <td>${ship.price}</td>
+                <td>${ship.person}</td>
+                <td>${ship.trailer}</td>
+            </tr>
+        `;
+    });
+    doc.shipsTableBody.innerHTML = rows;
+}
